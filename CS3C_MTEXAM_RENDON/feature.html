@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/feature_style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Feature Products Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feature.html">Feature</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="assets/lemon.jfif" alt="Product 1" width="200" height="200">
+                <p>Lemon</p>
+                <p>Price: PHP 100.00</p>
+                <button onclick="addToCart('Lemon', 1000.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/atis.jfif" alt="Product 2" width="200" height="200">
+                <p>Atis</p>
+                <p>Price: PHP140</p>
+                <button onclick="addToCart('Atis', 140)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Banana.jpg" alt="Product 3" width="200" height="200">
+                <p>Yellow Banana</p>
+                <p>Price: PHP110</p>
+                <button onclick="addToCart('Yellow Banana', 110)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/grapes green.jfif" alt="Product 4" width="200" height="200">
+                <p>Green Grapes</p>
+                <p>Price: PHP80</p>
+                <button onclick="addToCart('Green Grapes', 80)">Add to Cart</button>
+            </div>
+    </section>
+
+    <aside>
+        <h3>Cart List</h3>
+        <ul id="cart-list">
+        </ul>
+        <p id="total-price">Total: ₱0</p>
+        <button onclick="removeFromCart()">Remove</button>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 DM RENDON</p>
+    </footer>
+</body>
+</html>
